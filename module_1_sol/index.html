@@ -1,0 +1,29 @@
+<!doctype html>
+<html ng-app="app.js">
+  <head>
+    <title>Lunch Checker</title>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <style>
+      .message { font-size: 1.3em; }
+    </style>
+  </head>
+<body>
+   <div class="container">
+     <br><br><br>
+     <h1 align="center">Lunch Checker</h1>
+            <br><br><br>
+         <div ng-controller="LunchCheckController"; align="center">
+             <input ng-module="item"
+             placeholder="list comma separated dishes you usually have for lunch"
+             >
+        </div>
+         <br>
+         <div align="center">
+             <button ng-click="changeMessage(item)">Check If Too Much</button>
+         </div>
+   </div>
+
+</body>
+</html>
